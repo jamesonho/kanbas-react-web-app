@@ -5,98 +5,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <table width="100%">
-      <tbody>
-        <tr>
-          <td valign="top">
-            <ul>
-              <li>
-                <a href="#">Account</a>
-              </li>
-              <li>
-                <a href="#">Dashboard</a>
-              </li>
-              <li>
-                <a href="/kanbas/home.html">Courses</a>
-              </li>
-              <li>
-                <a href="#">Calender</a>
-              </li>
-              <li>
-                <a href="#">Inbox</a>
-              </li>
-              <li>
-                <a href="#">History</a>
-              </li>
-              <li>
-                <a href="#">Studio</a>
-              </li>
-              <li>
-                <a href="#">Commons</a>
-              </li>
-              <li>
-                <a href="#">Help</a>
-              </li>
-            </ul>
-          </td>
-          <td valign="top">
-            <ul>
-              <li>
-                <a href="#">Notifications</a>
-              </li>
-              <li>
-                <a href="#">Profile</a>
-              </li>
-              <li>
-                <a href="#">Files</a>
-              </li>
-              <li>
-                <a href="#">Settings</a>
-              </li>
-              <li>
-                <a href="">ePortfolios</a>
-              </li>
-              <li>
-                <a href="#">Shared Content</a>
-              </li>
-              <li>
-                <a href="#">The Hub</a>
-              </li>
-              <li>
-                <a href="#">Qwickly Course Tools</a>
-              </li>
-              <li>
-                <a href="#">Global Announcements</a>
-              </li>
-            </ul>
-          </td>
-          <td valign="top">
-            <h2>Jameson Ho's Profile</h2>
-            <hr />
-            <form action="edit.html">
-              <button>Edit Profile</button>
-            </form>
-            <br />
-            <font size="+3">Jameson Ho</font>
-            <br />
-            <br />
-            <font size="+2">Contact</font>
-            <p>
-              No registered services, you can add some on the settings page.
-            </p>
-            <font size="+2">Biography</font>
-            <p>
-              Faculty, Software Engineer, AI, Space, and renewables enthusiast.
-            </p>
-            <font size="+2">Links</font>
-            <br />
-            <br />
-            <a href="#">YouTube</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-md-1">
+          <ul class="wd-navigation">
+            <li>
+              <img
+                src="/kanbas/northeastern.png"
+                alt="Italian Trulli"
+                style="width: 75px; padding: 7.5px"
+              />
+            </li>
+            <li style="background-color: white">
+              <a
+                href="/kanbas/profile/index.html"
+                class="margin"
+                style="color: red"
+              >
+                <i
+                  class="margin fa-solid fa-user fa-2x"
+                  style="color: grey"
+                ></i>
+                <br />
+                Account
+              </a>
+            </li>
+            <li>
+              <a href="/kanbas/dashboard/index.html" class="margin">
+                <i
+                  class="margin fa-solid fa-gauge fa-2x"
+                  style="color: red"
+                ></i>
+                <br />
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="/kanbas/assignments/index.html" class="margin">
+                <i class="margin fa-solid fa-book fa-2x" style="color: red"></i>
+                <br />
+                Courses
+              </a>
+            </li>
+            <li>
+              <a href="#" class="margin">
+                <i
+                  class="margin fa-solid fa-calendar fa-2x"
+                  style="color: red"
+                ></i>
+                <br />
+                Calendar
+              </a>
+            </li>
+            <li>
+              <a href="#" class="margin">
+                <i
+                  class="margin fa-solid fa-inbox fa-2x"
+                  style="color: red"
+                ></i>
+                <br />
+                Inbox
+              </a>
+            </li>
+            <li>
+              <a href="#" class="margin">
+                <i
+                  class="margin fa-solid fa-calendar fa-2x"
+                  style="color: red"
+                ></i>
+                <br />
+                History
+              </a>
+            </li>
+            <li>
+              <a href="#" class="margin">
+                <i
+                  class="margin fa-solid fa-clock fa-2x"
+                  style="color: red"
+                ></i>
+                <br />
+                Studio
+              </a>
+            </li>
+            <li>
+              <a href="#" class="margin">
+                <i
+                  class="margin fa-solid fa-arrow-right fa-2x"
+                  style="color: red"
+                ></i>
+                <br />
+                Commons
+              </a>
+            </li>
+            <li>
+              <a href="#" class="margin">
+                <i
+                  class="margin fa-solid fa-question fa-2x"
+                  style="color: red"
+                ></i>
+                <br />
+                Help
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <ul class="wd-sidebar">
+            <li>
+              <a href="#">Notifications</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                style="
+                  color: black;
+                  border-left: 2px solid black;
+                  padding-left: 5px;
+                "
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a href="#">Files</a>
+            </li>
+            <li>
+              <a href="#">Settings</a>
+            </li>
+            <li>
+              <a href="">ePortfolios</a>
+            </li>
+            <li>
+              <a href="#">Shared Content</a>
+            </li>
+            <li>
+              <a href="#">The Hub</a>
+            </li>
+            <li>
+              <a href="#">Qwickly Course Tools</a>
+            </li>
+            <li>
+              <a href="#">Global Announcements</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <h2>Jameson Ho's Profile</h2>
+          <hr />
+          <form action="edit.html">
+            <div class="float-end">
+              <button class="btn btn-secondary" style="padding-right: 10px">
+                <i class="fa-solid fa-pencil"></i>
+                Edit Profile
+              </button>
+            </div>
+          </form>
+          <br />
+          <i class="margin fa-solid fa-user fa-5x" style="color: gray"></i>
+          <br />
+          <font size="+3">Jameson Ho</font>
+          <br />
+          <br />
+          <font size="+2">Contact</font>
+          <p>
+            No registered services, you can add some on the
+            <a href="#" style="color: red">settings</a> page.
+          </p>
+          <font size="+2">Biography</font>
+          <p>
+            Faculty, Software Engineer, AI, Space, and renewables enthusiast.
+          </p>
+          <font size="+2">Links</font>
+          <br />
+          <a style="color: red" href="https://www.youtube.com/@WebDevTV"
+            >YouTube</a
+          >
+        </div>
+      </div>
+    </div>
   </body>
 </html>
