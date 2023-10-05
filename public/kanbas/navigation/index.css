@@ -1,0 +1,37 @@
+.wd-navigation {
+  background-color: black;
+  color: white;
+  padding: 0px;
+  width: 80px;
+  font-size: 0.8em;
+  height: 100%;
+  float: left;
+}
+
+.wd-navigation li {
+  list-style-type: none;
+  margin-bottom: 7.5px;
+  text-align: center;
+}
+
+.wd-navigation li a {
+  color: white;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.margin {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+table td {
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: absolute;
+}
