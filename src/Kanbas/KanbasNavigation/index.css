@@ -1,0 +1,21 @@
+.wd-kanbas-navigation {
+  background: black;
+  border-radius: 0px;
+  border: none;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.wd-kanbas-navigation a {
+  background-color: black;
+  color: white;
+  border-radius: 0px;
+  border: none;
+  font-size: 10px;
+}
+
+.wd-kanbas-navigation a.active {
+  background-color: white;
+  color: red;
+}
