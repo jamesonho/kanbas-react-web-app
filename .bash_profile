@@ -1,1 +1,0 @@
-export REACT_APP_API_BASE=https://kanbas-node-server-app-1d41.onrender.com/api
