@@ -11,7 +11,9 @@ import axios from "axios";
 // import "./index.css"; // optionally import CSS files as needed
 function Kanbas() {
   const [courses, setCourses] = useState(db.courses);
-  const URL = "http://localhost:4000/api/courses";
+
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/courses`;
 
   const findAllCourses = async () => {
     const response = await axios.get(URL);
