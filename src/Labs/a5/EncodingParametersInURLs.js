@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function EncodingParametersInURLs() {
+  const API_BASE = process.env.REACT_APP_API_BASE_LAB;
+  const URL = `${API_BASE}`;
+
   const [a, setA] = useState(34);
   const [b, setB] = useState(23);
   const [welcome, setWelcome] = useState("");
   const fetchWelcome = async () => {
-    const response = await axios.get("http://localhost:4000/a5/welcome");
+    const response = await axios.get(`${URL}/welcome`);
     setWelcome(response.data);
   };
   useEffect(() => {
@@ -14,13 +17,11 @@ function EncodingParametersInURLs() {
   }, []);
   const [result, setResult] = useState(0);
   const fetchSum = async (a, b) => {
-    const response = await axios.get(`http://localhost:4000/a5/add/${a}/${b}`);
+    const response = await axios.get(`${URL}/add/${a}/${b}`);
     setResult(response.data);
   };
   const fetchSubtraction = async (a, b) => {
-    const response = await axios.get(
-      `http://localhost:4000/a5/subtract/${a}/${b}`
-    );
+    const response = await axios.get(`${URL}/subtract/${a}/${b}`);
     setResult(response.data);
   };
 
@@ -63,27 +64,21 @@ function EncodingParametersInURLs() {
         Fetch Substraction of {a} - {b}
       </button>
       <h3>Path Parameters</h3>
-      <a
-        href={`http://localhost:4000/a5/add/${a}/${b}`}
-        className="btn btn-primary"
-      >
+      <a href={`${URL}/add/${a}/${b}`} className="btn btn-primary">
         Add {a} + {b}
       </a>
-      <a
-        href={`http://localhost:4000/a5/subtract/${a}/${b}`}
-        className="btn btn-danger"
-      >
+      <a href={`${URL}/subtract/${a}/${b}`} className="btn btn-danger">
         Substract {a} - {b}
       </a>
       <h3>Query Parameters</h3>
       <a
-        href={`http://localhost:4000/a5/calculator?operation=add&a=${a}&b=${b}`}
+        href={`${URL}/calculator?operation=add&a=${a}&b=${b}`}
         className="btn btn-primary"
       >
         Add {a} + {b}
       </a>
       <a
-        href={`http://localhost:4000/a5/calculator?operation=subtract&a=${a}&b=${b}`}
+        href={`${URL}/calculator?operation=subtract&a=${a}&b=${b}`}
         className="btn btn-danger"
       >
         Substract {a} - {b}
