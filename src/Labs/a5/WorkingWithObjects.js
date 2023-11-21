@@ -11,8 +11,8 @@ function WorkingWithObjects() {
     score: 0,
   });
 
-  const API_BASE = process.env.REACT_APP_API_BASE_LAB;
-  const URL = `${API_BASE}/a5/assignment`;
+  const LAB_BASE = process.env.REACT_APP_LAB_BASE;
+  const URL = `${LAB_BASE}/assignment`;
 
   const fetchAssignment = async () => {
     const response = await axios.get(`${URL}`);
