@@ -3,8 +3,8 @@ import WorkingWithObjects from "./WorkingWithObjects";
 import WorkingWithArrays from "./WorkingWithArrays";
 
 function Assignment5() {
-  const API_BASE = process.env.REACT_APP_API_BASE_LAB;
-  const URL = `${API_BASE}`;
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/a5`;
   return (
     <div>
       <h1>Assignment 5</h1>
